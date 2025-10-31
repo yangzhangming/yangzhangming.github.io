@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yang's Academic Pages"
+title: "Yang's Pages"
 author_profile: true
 redirect_from: 
   - /about/
