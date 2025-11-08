@@ -1,0 +1,162 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif; /* 中文友好字体 */
+    line-height: 1.6;
+    color: #333; /* 文字颜色 */
+    background-color: #f5f5f5; /* 页面背景色 */
+}
+
+/* 容器样式（控制内容宽度，居中显示） */
+.container {
+    width: 80%;
+    max-width: 1200px; /* 最大宽度，防止屏幕太宽时内容过长 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #2c3e50; /* 导航栏背景色（深蓝色） */
+    color: #fff; /* 导航栏文字颜色 */
+    padding: 15px 0;
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 确保导航栏在最上层，不被其他内容遮挡 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影，增加层次感 */
+}
+
+.navbar .container {
+    display: flex; /* 弹性布局，让Logo和菜单左右分布 */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: #fff;
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.navbar-menu {
+    display: flex; /* 菜单横向排列 */
+    gap: 30px; /* 菜单项之间的间距 */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* 颜色过渡效果，hover时平滑变色 */
+}
+
+.nav-link:hover {
+    color: #3498db; /* hover时颜色变为浅蓝色 */
+}
+
+/* 板块样式（每个内容板块的统一样式） */
+.section {
+    padding: 100px 0; /* 上下内边距，避免内容被导航栏遮挡 */
+    text-align: center; /* 文字居中 */
+}
+
+/* 首页板块特殊样式 */
+#home {
+    background-color: #fff;
+    min-height: 100vh; /* 占满整个屏幕高度 */
+    display: flex; /* 垂直居中 */
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* 头像样式 */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 圆形头像 */
+    border: 5px solid #3498db; /* 边框颜色 */
+    object-fit: cover; /* 保持图片比例 */
+}
+
+/* 其他板块标题样式 */
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    position: relative;
+}
+
+/* 标题下方小横线 */
+.section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto;
+}
+
+/* 研究方向、论文成果项目样式 */
+.research-item, .pub-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* 轻微阴影 */
+    text-align: left; /* 文字左对齐 */
+}
+
+.research-item h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.pub-item p {
+    color: #555;
+}
+
+/* 联系方式板块样式 */
+#contact {
+    background-color: #fff;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline; /* hover时下划线 */
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
