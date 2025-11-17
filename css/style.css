@@ -129,6 +129,120 @@ body {
     margin: 10px auto;
 }
 
+/* 关于我板块整体样式 */
+.about-content {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 个人简介 */
+.about-intro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.about-intro .highlight {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* 时间线标题 */
+.about-timeline h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-timeline h3 i {
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+/* 时间线容器 */
+.timeline {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 2px solid #e0e0e0;
+}
+
+/* 时间线项目 */
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* 时间线日期 */
+.timeline-date {
+    position: absolute;
+    left: -120px;
+    top: 0;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* 时间线内容 */
+.timeline-content {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.timeline-content p {
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .timeline-date {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .about-intro {
+        padding: 20px;
+    }
+
+    .about-timeline h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
 /* 研究方向、论文成果项目样式 */
 .research-item, .pub-item {
     background-color: #fff;
